@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree|Montserrat|Roboto" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="{% static 'js/funciones.js' %}"></script>
+</head>
+<body>
+	<header id="header">
+    	<figure>
+    		<img src="{% static 'img/logo1.png' %}" alt="puntolab-logo">
+    	</figure>
+        <nav id="menu">
+        	<li  id="inicio" class="icon-home">
+                <a href="/inicio/">INICIO</a>
+            </li>
+            <li class="icon-services">
+                <a id="menu-servicios"  href="/servicios/">SERVICIOS</a>
+            </li>
+			<li id="contacto" class="icon-phone">
+				<a href="/contacto/">CONTACTO</a>
+			</li>
+			<li id="acceder" class="icon-login">
+				<a href="/login/">ACCEDER</a>
+			</li>
+        </nav>		
+	</header>
+	<section id="clientes_todos">
+		{% block body %}
+    	{% endblock %}
+	</section>
+   
+
+</body>
+</html>

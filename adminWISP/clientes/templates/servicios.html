@@ -1,0 +1,62 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block title%}
+{% endblock %}
+
+{% block body%}     
+    <nav id="nav-servicios">
+        <ul>
+            <li  class="icon-internet">
+                <a>
+                    Internet
+                </a>
+            </li>
+            <li class="icon-wifi">
+                <a>            
+                    Enlaces Privados
+                </a>
+            </li>
+            <li class="icon-html">          
+                <a>
+                    App's WEB
+                </a>
+            </li>
+            <li class="icon-pc">
+                <a id="mtto">
+                    Mantenimiento a PC's
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section id="servicios">
+        <!--figure class="img-servicios">
+            <img src="{% static 'img/puntolab-servicios.jpg' %}" alt="">
+        </figure-->
+        <div>
+            <h1>
+                Servicios
+            </h1>
+        </div>
+        <article id="internet">
+                <p>
+                    INTERNET
+                </p>  
+        </article>
+        <article id="enlaces">
+               <p>
+                   ENLACES PUNTO A PUNTO (PTP)
+               </p> 
+        </article>
+        <article id="apps">
+                <p>
+                    APP'S WEB Y MOVIL
+                </p>
+        </article>
+        <article id="mtto">
+                <p>
+                    MANTENIMIETO A PC'S
+                </p>
+        </article>
+    </section>
+
+{% endblock %}

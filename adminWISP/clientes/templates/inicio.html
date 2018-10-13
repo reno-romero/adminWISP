@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block title%}
+    admin WISP
+{% endblock %}
+
+{% block body%}     
+    <section id="inicio">
+        <figure class="img-servicios">
+            <img src="{% static 'img/torre1.jpg' %}" alt="">
+        </figure>
+        <div>
+            <h1>
+                ¡BIENVENIDO!
+            </h1>
+            <p>
+              Somos una Comercializadora de Servicios de Telecomunicaciones,  proveedores de servicios de acceso a  Internet . Conectamos a nuestros clientes a Internet, utilizando enlaces de datos de alta velocidad. Sin necesidad de lineas telefónicas. Llegamos a la zona rural a donde los grandes proveedores no lo hacen.
+                
+                Somos proveedores de Tecnologías de la Información y la Comunicación.
+
+                <br>
+                <br>
+                Le brindamos los servicios que mejor se adapten a sus necesidades...
+            </p>
+        </div>
+    </section>
+
+{% endblock %}

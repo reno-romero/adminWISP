@@ -1,0 +1,60 @@
+{% extends "index.html" %}
+
+{% block title%}
+{% endblock %}
+
+{% block body%}
+
+    {% for cliente in clientes %}
+        <section id="lista">       
+            <span>
+                ID: {{cliente.id}}
+            </span>
+            <br>
+            <span>
+                NOMBRE: {{cliente.nombre}}
+            </span>
+            <span>
+                {{cliente.apellidos}}
+            </span>
+            <br>
+            <span>
+                DOMICILIO: {{cliente.domicilio}}
+            </span>
+            <br>
+            <span>
+                LOCALIDAD: {{cliente.localidad}}
+            </span>
+        </section>
+        <p class="boton">
+            Mostrar todo
+            <span id="id">
+                {{cliente.id}}
+            </span>
+        </p>
+        <br>
+        <hr class="hr-lista-clientes">
+        <br>
+        <!--<span>
+            {{cliente.telefono}}
+        </span>-->
+    {% endfor %}
+
+   <!--  {% for instalacion in instalaciones %}
+        <span>
+            {{instalacion.ip_asignada}}
+        </span>
+        <span>
+            {{instalacion.fecha_instalacion}}
+        </span>
+        <span>
+            {{instalacion.antena}}
+        </span>
+        <span>
+            {{instalacion.mastil}}
+        </span>
+        <span>
+            {{instalacion.plan}}
+        </span>
+    {% endfor %} -->
+{% endblock %}
